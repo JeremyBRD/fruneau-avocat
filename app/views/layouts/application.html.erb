@@ -14,7 +14,7 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
+    <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
     <%= yield %>
   </body>
 </html>
