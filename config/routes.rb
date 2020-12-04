@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   resources :articles
   devise_for :users
   root to: 'pages#home'
