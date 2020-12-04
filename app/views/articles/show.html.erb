@@ -5,11 +5,11 @@
   <%= @article.title %>
 </p>
 
-<%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+<%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill if @article.photo.attached? %>
 
 <p>
   <strong>Body:</strong>
-  <%= @article.body %>
+  <%= @article.rich_body %>
 </p>
 
 <p>
@@ -19,5 +19,3 @@
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
-
-# to add an image in background : https://kitt.lewagon.com/karr/karr.kitt/lectures/rails/hosting-image-upload-active-storage-6/index.html?title=Hosting+%26+Image+Upload&program_id=1#/5/6

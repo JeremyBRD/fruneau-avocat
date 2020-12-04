@@ -13,9 +13,13 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+# Front libraries :
 gem 'react-rails'
 gem 'greensock-rails'
+# To stock article images
 gem 'cloudinary', '~> 1.16.0'
+# Create an article with images
+gem 'image_processing', '~> 1.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
