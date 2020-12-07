@@ -1,4 +1,5 @@
 h1 {
+  font-family: $body-font;
   font-size: 48px;
   line-height: 48px;
   font-weight: medium;
@@ -6,6 +7,7 @@ h1 {
 }
 
 h2 {
+  font-family: $body-font;
   font-weight: medium;
   font-size: 40px;
   line-height: 48px;
@@ -14,6 +16,7 @@ h2 {
 }
 
 h3 {
+  font-family: $body-font;
   font-weight: medium;
   font-size: 20px;
   line-height: 26px;
@@ -22,13 +25,18 @@ h3 {
 }
 
 p, a {
+  font-family: $body-font;
   font-weight: medium;
   font-size: 16px;
   line-height: 26px;
-  
-  p {
-    color: $dark-gray;
-  }
+}
+
+p {
+  color: $dark-gray;
+}
+
+a {
+  color: $duck-blue;
 }
 
 .main-container {
