@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Yuma Fruneau | Avocat |</title>
-    
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -17,7 +17,7 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+    <%# react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
     <%= yield %>
   </body>
 </html>
