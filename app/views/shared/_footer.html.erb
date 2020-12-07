@@ -1,0 +1,45 @@
+<div class="footer">
+  <div class="footer-contact-section">
+    <div class="branding">
+      <%= image_tag 'logo_bigger.png' %>
+      <h2>YUMA FRUNEAU</h2>
+    </div>
+    <div class="footer-info-contact">
+      <div class="footer-info-contact-address">
+        <p>24 boulevard de Sebastopol</p>
+        <p>75004 Paris</p>
+      </div>
+      <div class="footer-info-contact-tel">
+        <p>Tel : 09 81 21 25 05</p>
+        <p>Fax : 09 56 65 38 16</p>
+      </div>
+      <p>avocat@fruneau-avocat.com</p>
+    </div>
+  </div>
+  <div class="footer-site-plan">
+    <h2></h2>
+    <div class="footer-site-plan-links">
+      <%= link_to 'Le Cabinet', '#' %>
+      <%= link_to 'Les Domaines d\'Expertise', '#' %>
+      <%= link_to 'Les Actualités Juridiques', '#' %>
+      <%= link_to 'Contact', '#' %>
+    </div>
+  </div>
+  <div class="footer-legal-section">
+    <div class="footer-social-links">
+    <%= link_to '#' do %>
+      <i class="fab fa-facebook-square"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fab fa-linkedin"></i>
+    <% end %>
+    </div>
+    <%= link_to 'Mentions Légales', 'path' %>
+    <div class="footer-rights">
+      <i class="far fa-copyright"></i>
+      <%= copiright_year_update %>
+      <p>YUMA FRUNEAU by</p>
+      <%= link_to 'Jérémy BRD', 'https://www.jeremybrd.dev' %>
+    </div>
+  </div>
+</div>
