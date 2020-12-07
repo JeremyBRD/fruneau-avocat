@@ -1,2 +1,53 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# ---------------BANNER---------------  %>
+
+<div class="banner">
+  <div class="site-title">
+    <h1>Avocate à la cour</h1>
+    <h2>Barreau de Paris</h2>
+  </div>
+
+  <div class="hero-section">
+    <%= image_tag 'yuma-avatar.png', alt: 'photo de Yuma Funeau' %>
+    <div class="social-links">
+    <%= link_to '#' do %>
+      <i class="fab fa-facebook-square"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fab fa-linkedin"></i>
+    <% end %>
+    </div>
+  </div>
+
+  <%= link_to "#", class: 'call-to-action' do %>
+    <p>Me contacter</p>
+    <i class="fas fa-envelope"></i>
+  <% end %>
+
+  <div class="activities-domain-section">
+    <h3>DROIT DES LIBERTÉS FONDAMENTALES</h3>
+    <h3>DIVORCES</h3>
+    <h3>REDACTION DE CONTRATS</h3>
+    <h3>LITIGES DE VOISINAGE</h3>
+  </div>
+
+</div>
+
+<%# ---------------PRESENTATION---------------  %>
+
+<div class="presentation">
+  <h2>Présentation :</h2>
+  <p>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, assumenda 
+  sequi veniam eligendi dignissimos fugit. Cumque, maiores. Velit, in provident.
+  </p>
+</div>
+
+<%# ---------------CAROUSEL---------------  %>
+
+<%= image_tag 'balance_justice.jpg' %>
+<div class="carousel-section">
+  <h2>Les Prestations</h2>
+  <div class="carousel">
+    <p>Ici Carousel</p>
+  </div>
+</div>
