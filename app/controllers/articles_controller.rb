@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  # , :check_authorization!
+  # rescue_from User::NotAuthorized, with: :user_not_authorized
 
   def index
     @articles = Article.all
@@ -47,4 +49,13 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :rich_body, :date, :photo)
     end
+
+    # def check_authorization!
+    #   rescue_from User::NotAuthorized unless current_user.admin?
+    # end
+
+    # def user_not_authorized
+    #   flash[:error] = "Vous n'avez pas l'accès à cette section."
+    #   redirect_back(fallback_location: root_path)
+    # end
 end
