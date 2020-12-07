@@ -2,6 +2,7 @@ h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: medium;
+  color: $dark-gray;
 }
 
 h2 {
@@ -9,6 +10,7 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 2px;
+  color: $dark-gray;
 }
 
 h3 {
@@ -16,23 +18,28 @@ h3 {
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 5px;
+  color: $dark-gray;
 }
 
 p, a {
   font-weight: medium;
   font-size: 16px;
   line-height: 26px;
+  
+  p {
+    color: $dark-gray;
+  }
 }
 
 .main-container {
   background: no-repeat
               top 400px
               right -90px
-              
               url('elips_bg_right.png'),
               no-repeat
               top 800px
               left -60px
               url('elips_bg_left.png');
   background-size: 55%;
+  overflow-x: hidden;
 }
