@@ -1,0 +1,17 @@
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  font-weight: medium;
+  background-color: rgb(4, 118, 143);
+  padding: 18px 20px;
+  border-radius: 6px;
+  color: white;
+
+  & p {
+    font-size: 16px;
+  }
+
+  & i {
+    margin-left: 10px;
+  }
+}

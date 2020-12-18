@@ -22,18 +22,33 @@
   font-size: 16px;
   letter-spacing: 5px;
   text-align: center;
-  
 
   &:hover {
     text-decoration: none;
     color: $white;
   }
+
 }
 
-.navbar-brand img {
-  height: cover;
-  width: 90px;
-  margin: auto;
+.navbar-brand {
+  width: 210px;
+  display: grid;
+  grid-template-columns: 95px 115px ;
+  grid-template-rows: 1fr;
+  margin: auto auto auto 20px;
+
+  & img {
+    width: 90px;
+  }
+
+  & .brand-text {
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
 }
 
 .avatar-dropdown {
