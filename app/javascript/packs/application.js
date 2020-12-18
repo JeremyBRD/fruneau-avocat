@@ -22,7 +22,6 @@ require("channels")
 // ----------------------------------------------------
 
 // External imports
-import "bootstrap";
 //= require 'greensock/TweenLite'
 //= require 'greensock/easing/EasePack'
 
