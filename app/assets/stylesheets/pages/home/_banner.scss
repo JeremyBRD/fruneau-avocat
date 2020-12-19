@@ -1,7 +1,7 @@
 // Specific CSS for your hero-section in home
 .banner {
   // Viewport Height - Navbar height
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 65% 35%;
@@ -34,10 +34,10 @@
 // HERO-SECTION
 
 .hero-section {
-  margin-left: 250px;
+  margin-left: 290px;
 
   & img {
-    width: 23vw;
+    width: 22vw;
   }
 
   & .social-links {
@@ -49,12 +49,8 @@
     }
 
     & a {
-      font-size: 24px;
+      font-size: 28px;
       color: rgb(25, 167, 199);
     }
   }
 }
-
-// ACTIVITIES-DOMAINES-SECTION /!\ React component
-
-
