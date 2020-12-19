@@ -22,10 +22,28 @@
   font-size: 16px;
   letter-spacing: 5px;
   text-align: center;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background: rgba(240, 246, 247, .5);
+    transition: width .2s ease-out;
+    bottom: -15px;
+    left: 25%;
+    right: 75%;
+    border-radius: 25%;
+  }
 
   &:hover {
-    text-decoration: none;
-    color: $white;
+    &:after {
+      width: 50%;
+      transition: width .2s ease-out;
+      right: 75%;
+      left: 25%;
+    }
   }
 
 }
