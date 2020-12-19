@@ -1,6 +1,9 @@
 <div class="footer">
+
+<%# ---------------CONTACT SECTION (LEFT CONTENT)---------------  %>
+
   <div class="footer-contact-section">
-    <div class="branding">
+    <div class="footer-brand">
       <%= image_tag 'logo_bigger.png' %>
       <h2>YUMA FRUNEAU</h2>
     </div>
@@ -16,8 +19,11 @@
       <p>avocat@fruneau-avocat.com</p>
     </div>
   </div>
-  <div class="footer-site-plan">
-    <h2></h2>
+
+<%# ---------------SITE PLAN SECTION (MIDDLE CONTENT)---------------  %>
+
+  <div class="footer-site-plan-section">
+    <h3>PLAN DU SITE :</h3>
     <div class="footer-site-plan-links">
       <%= link_to 'Le Cabinet', '#' %>
       <%= link_to 'Les Domaines d\'Expertise', '#' %>
@@ -25,14 +31,17 @@
       <%= link_to 'Contact', '#' %>
     </div>
   </div>
+
+<%# ---------------LEGAL SECTION (RIGHT CONTENT)---------------  %>
+
   <div class="footer-legal-section">
     <div class="footer-social-links">
-    <%= link_to '#' do %>
-      <i class="fab fa-facebook-square"></i>
-    <% end %>
-    <%= link_to '#' do %>
-      <i class="fab fa-linkedin"></i>
-    <% end %>
+      <%= link_to '#' do %>
+        <i class="fab fa-facebook-square"></i>
+      <% end %>
+      <%= link_to '#' do %>
+        <i class="fab fa-linkedin"></i>
+      <% end %>
     </div>
     <%= link_to 'Mentions Légales', 'path' %>
     <div class="footer-rights">
@@ -42,4 +51,5 @@
       <%= link_to 'Jérémy BRD', 'https://www.jeremybrd.dev' %>
     </div>
   </div>
+
 </div>

@@ -1,0 +1,21 @@
+.prestation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+  margin-top: 50px;
+
+  & h2 {
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  & .carousel{
+    min-height: 400px;
+    min-width: 600px;
+    background: white;
+    border: 1px solid;
+    margin-bottom: 50px;
+  }
+}

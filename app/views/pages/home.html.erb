@@ -17,7 +17,6 @@
     <% end %>
     </div>
   </div>
-
   <%= render "components/call-to-action" %>
 
   <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
@@ -58,11 +57,12 @@
 
 <%# ---------------CAROUSEL---------------  %>
 
-<div class="carousel-section">
+<div class="prestation-section">
 
   <h2>Les Prestations</h2>
 
   <div class="carousel">
-    <p>Ici Carousel</p>
+    <p>React Carousel component</p>
+    <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
   </div>
 </div>

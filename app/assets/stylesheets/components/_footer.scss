@@ -1,0 +1,104 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+  min-height: 340px;
+  background: #1D1C1E;
+  color: white;
+
+  & a {
+    color: white;
+
+    &:hover {
+      color: rgb(25, 167, 199);
+    }
+  }
+}
+
+// FOOTER CONTACT SECTION (LEFT)
+
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-brand {
+  display: grid;
+  grid-template-columns: 130px 160px ;
+  grid-template-rows: 1fr;
+  margin-bottom: 30px;
+
+  & img {
+    width: 118px;
+  }
+
+  & h2 {
+    margin: auto;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.footer-info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 40%;
+  width: 290px;
+}
+
+// FOOTR SITE PLAN SECTION (MIDDLE)
+
+.footer-site-plan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid white;
+  border-right: 1px solid;
+  border-image: linear-gradient(to top, transparent, white, transparent) 1;
+
+  & h3 {
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-site-plan-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 60%;
+}
+
+// FOOTER LEGAL SECTION (RIGHT)
+
+.footer-legal-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  margin-right: 120px;
+}
+
+.footer-social-links * {
+  font-size: 24px;
+  margin-left: 6px;
+}
+
+.footer-rights {
+  display: flex;
+  align-items: center;
+  
+  * {
+    margin-left: 6px;
+  }
+}
