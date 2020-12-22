@@ -1,0 +1,24 @@
+.mentions-legales-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: -40px;
+  }
+}
+
+.mentions-legales-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 800px;
+  height: 600px;
+}
