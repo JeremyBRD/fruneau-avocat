@@ -4,6 +4,6 @@ class UsersController < ApplicationController
   private
 
   def send_welcome_email
-    UserMailer.with(user: self).welcome.deliver_now
+    ContactMailer.contact.deliver_now
   end
 end
