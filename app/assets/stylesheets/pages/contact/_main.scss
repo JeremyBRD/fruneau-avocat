@@ -1,0 +1,29 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  iframe {
+    margin: 100px 0 100px 250px;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 540px;
+
+  h1 {
+    font-weight: 500;
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}

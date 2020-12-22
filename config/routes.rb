@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'domaines-expertise', to: 'pages#domaines_expertise'
   get 'cabinet', to: 'pages#cabinet'
+  get 'contact', to: 'pages#contact'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
