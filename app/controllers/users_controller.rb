@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  after_create :send_welcome_email
+  after_action :send_welcome_email
 
   private
 
