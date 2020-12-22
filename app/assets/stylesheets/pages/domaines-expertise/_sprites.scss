@@ -2,21 +2,25 @@
  width: 300px;
   height: 300px;
   object-fit: cover;
-   object-position: -600px 0 ;
+  object-position: -600px 0 ;
+  border-radius: 10px;
+
 }
 
 #trombones {
  width: 300px;
   height: 300px;
   object-fit: cover;
-   object-position: -1400px 0 ;
+  object-position: -1400px 0 ;
+  border-radius: 10px;
 }
 
 #conseil-etat {
  width: 300px;
   height: 300px;
   object-fit: cover;
-   object-position: -90px 0 ;
+  object-position: -90px 0 ;
+  border-radius: 10px;
 }
 
 #contract {
@@ -24,4 +28,5 @@
   height: 300px;
   object-fit: cover;
   object-position: -950px 0 ;
+  border-radius: 10px;
 }
