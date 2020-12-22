@@ -61,7 +61,8 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "fruneau_avocat_production"
 
-  config.action_mailer.delivery_method     = :smtp
+  config.action_mailer.delivery_method     = :postmark
+  config.action_mailer.postmark_settings   = { api_token: ENV['POSTMARK_API_TOKEN'] }
   config.action_mailer.default_url_options = { host: "fruneau-avocat.com" }
 
   config.action_mailer.perform_caching = false
