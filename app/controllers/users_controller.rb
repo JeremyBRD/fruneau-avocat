@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
-  after_action :send_welcome_email
+  # after_action :send_welcome_email
 
-  private
+  # private
 
-  def send_welcome_email
-    ContactMailer.contact.deliver_now
-  end
+  # def send_welcome_email
+  #   ContactMailer.contact.deliver_now
+  # end
 end
