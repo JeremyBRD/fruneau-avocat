@@ -20,9 +20,15 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%# react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
-    <div class="home-container">
-      <%= yield %>
-    </div>
+    <% if action_name === 'home' %>
+      <div class="home-container">
+        <%= yield %>
+      </div>
+    <% else %>
+      <div class="pages-container">
+        <%= yield %>
+      </div>
+    <% end %>
     <% unless action_name == 'new' %>
       <%= render 'shared/footer' %>
     <% end %>

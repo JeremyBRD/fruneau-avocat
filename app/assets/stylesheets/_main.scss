@@ -37,3 +37,15 @@ a {
               url('elips_bg_left.png');
   background-size: 68%, 50%, 50%;
 }
+
+.pages-container {
+  background: no-repeat
+              top 300px
+              right -90px
+              url('elips_bg_right.png'),
+              no-repeat
+              top 800px
+              left -60px
+              url('elips_bg_left.png');
+  background-size: 50%, 50%;
+}
