@@ -30,15 +30,15 @@ body {
   background: no-repeat
               top -50px
               left -90px
-              url('paris_home_bg.png'),
+              asset-data-url('paris_home_bg.png'),
               no-repeat
               top 600px
               right -90px
-              url('elips_bg_right.png'),
+              asset-data-url('elips_bg_right.png'),
               no-repeat
               top 900px
               left -60px
-              url('elips_bg_left.png');
+              asset-data-url('elips_bg_left.png');
   background-size: 68%, 50%, 50%;
 }
 
