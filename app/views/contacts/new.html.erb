@@ -1,7 +1,26 @@
-<p>coucou</p>
-<%= simple_form_for @contact do |f| %>
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.input :body %>
-  <%= f.button :submit %>
-<% end %>
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      <h2>Contactez-nous :</h2>
+
+      <%= simple_form_for @contact do |f| %>
+      <p class="name">
+        <%= f.input :name, label: false, placeholder: 'Votre nom', input_html: { class: 'feedback-input' } %>
+      </p>
+      
+      <p class="email">
+        <%= f.input :email, label: false, placeholder: 'Votre e-mail', input_html: { class: 'feedback-input' } %>
+      </p>
+      
+      <p class="text">
+        <%= f.input :body, label: false, placeholder: 'Votre message', as: :text, :input_html => { :cols => 6, :rows => 300 }, input_html: { class: 'feedback-input' } %>
+      </p>
+      
+      <div class="submit">
+        <%= f.submit 'ENVOYER', id: 'button-blue' %>
+        <div class="ease"></div>
+      </div>
+      <% end %>
+    </form>
+  </div>
+</div>
