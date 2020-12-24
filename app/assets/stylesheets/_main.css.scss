@@ -46,10 +46,10 @@ body {
   background: no-repeat
               top 300px
               right -90px
-              url('elips_bg_right.png'),
+              asset-data-url('elips_bg_right.png'),
               no-repeat
               top 800px
               left -60px
-              url('elips_bg_left.png');
+              asset-data-url('elips_bg_left.png');
   background-size: 50%, 50%;
 }
