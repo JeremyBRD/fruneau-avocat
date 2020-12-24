@@ -1,0 +1,136 @@
+*::-webkit-input-placeholder {
+  color: rgb(51, 49, 54);
+}
+
+#feedback-page{
+	text-align: center;
+}
+
+#form-main{
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+	float: left;
+  padding-top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#form-div {
+	background: #fff;
+  padding: 35px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top: 30px;
+	margin-left: -260px;
+  border-radius: 10px;
+}
+
+.form h2 {
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  color: rgb(51, 49, 54);
+  font-weight: 500;
+}
+
+.feedback-input {
+	color: rgb(183, 183, 183);
+	font-family: 'Jost', sans-serif;
+  font-weight: 300;
+	font-size: 14px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fff;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 0px solid transparent;
+  border-bottom: 1px solid rgb(25, 167, 199);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	color: #000;
+	outline: none;
+  padding: 13px;
+}
+
+.focused{
+	color: #000;
+	border: #30aed6 solid 2px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color: white;
+}
+
+#button-blue{
+	font-family: 'Jost', sans-serif;
+	float: left;
+	width: 100%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: rgb(4, 118, 143);
+	color: white;
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+#button-blue:hover{
+	background-color: rgb(25, 167, 199);
+	color: #FFFFFF;
+  border: 1px solid rgb(25, 167, 199);
+  border-radius: 5px;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
