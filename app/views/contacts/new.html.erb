@@ -1,6 +1,15 @@
-<%= simple_form_for @contact do |f| %>
-  <%= f.input :name, label: 'Nom :', placeholder: 'Votre nom' %>
-  <%= f.input :email, label: 'E-mail :', placeholder: 'Votre e-mail' %>
-  <%= f.input :body, label: 'Message :', placeholder: 'Votre message' %>
-  <%= f.submit 'ENVOYER' %>
-<% end %>
+<div id="form-main">
+  <div id="form-div">
+    <div class="form" id="form1">
+      <h2>Contactez-nous :</h2>
+
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input :name, label: false, placeholder: 'Votre nom', input_html: { class: 'feedback-input' } %>
+        <%= f.input :email, label: false, placeholder: 'Votre e-mail', input_html: { class: 'feedback-input' } %>
+        <%= f.input :body, label: false, placeholder: 'Votre message', as: :text, :input_html => { :cols => 6, :rows => 300 }, input_html: { class: 'feedback-input' } %>
+        <%= f.submit 'ENVOYER', id: 'button-blue' %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
