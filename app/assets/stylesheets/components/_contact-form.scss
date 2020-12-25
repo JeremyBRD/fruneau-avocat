@@ -90,9 +90,9 @@ input:focus, textarea:focus {
 	font-size: 18px;
 	padding-top: 22px;
 	padding-bottom: 22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
   margin-top: -4px;
   font-weight: 300;
   border-radius: 5px;
@@ -113,11 +113,11 @@ input:focus, textarea:focus {
 	width: 0px;
 	height: 74px;
 	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-o-transition: .2s ease;
+	-ms-transition: .2s ease;
+	transition: .2s ease;
 }
 
 .submit:hover .ease{
