@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.valid?
       ContactMailer.contact(@contact).deliver_now
-      redirect_to
+      redirect_to new_contact_url
       flash[:notice] = "Nous avons reçu votre message et reviendrons vers vous rapidement"
     else
       flash[:notice] = "Une erreur c'est produite, veuillez réessayer."
