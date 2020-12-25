@@ -41,12 +41,11 @@
   }
 
   & .social-links {
-    text-align: center;
-    margin-top: 5px;
+    display: flex;
+    justify-content: center;
 
-    & :nth-child(1){
-      margin-right: 5px;
-    }
+    margin-top: 5px;
+    width: 70px;
 
     & a {
       font-size: 28px;
