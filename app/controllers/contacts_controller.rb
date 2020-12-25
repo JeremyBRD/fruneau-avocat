@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
-  def create(redirectPath)
+  def create
     @contact = Contact.new(contact_params)
     if @contact.valid?
       ContactMailer.contact(@contact).deliver_now
