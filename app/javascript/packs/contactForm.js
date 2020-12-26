@@ -1,7 +1,6 @@
 const callToAction = document.getElementById('call-contact-form');
 const sendingBtn = document.getElementById('button-blue');
 const formDiv = document.getElementById('form-main');
-const form = document.querySelector('.form')
 
 const openContactForm = () => {
   callToAction.addEventListener('click', () => {
@@ -19,7 +18,7 @@ const closeContactForm = () => {
     if (e.path[0].id === 'form-main') {
       formDiv.style.display = 'none';
       document.body.style.position = 'unset';
-    }
+    };
   });
 }
 
