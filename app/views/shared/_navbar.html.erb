@@ -7,8 +7,16 @@
       </div>
     <% end %>
     <div class="home-navbar-nav-links">
-
-      <%= link_to 'LE CABINET', cabinet_path, class: 'nav-link-home' %>
+      <div class="dropdown-cabinet">
+        <%= link_to cabinet_path, class: 'nav-link-home dropdown-cabinet-btn' do %>
+          LE CABINET
+        <% end %>
+        <div class="linker"></div>
+        <div class="dropdown-cabinet-content">
+          <%= link_to 'LES VALEURS DU CABINET', cabinet_path %>
+          <%= link_to 'LES HONORAIRES', '/cabinet#lthonoraires' %>
+        </div>
+      </div>
       <%= link_to 'LES DOMAINES D\'EXPERTISE', domaines_expertise_path, class: 'nav-link-home' %>
       <%= link_to 'LES ACTUALITÉS JURIDIQUES', '#', class: 'nav-link-home' %>
       <%= link_to 'CONTACT', contact_path, class: 'nav-link-home' %>

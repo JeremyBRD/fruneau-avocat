@@ -47,9 +47,15 @@
     margin-top: 5px;
     width: 70px;
 
+    transition: all 0.1s;
+
     & a {
       font-size: 28px;
       color: rgb(25, 167, 199);
+
+      &:hover {
+        color: rgb(4, 118, 143);
+      }
     }
   }
 }

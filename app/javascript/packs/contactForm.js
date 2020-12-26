@@ -6,7 +6,7 @@ const openContactForm = () => {
   callToAction.forEach(btn => {
     btn.addEventListener('click', () => {
       formDiv.style.display = 'flex';
-      document.body.style.position = 'fixed';
+      document.body.style.overflow = 'hidden';
     });
   })
 }
@@ -14,12 +14,12 @@ const openContactForm = () => {
 const closeContactForm = () => {
   sendingBtn.addEventListener('click', () => {
     formDiv.style.display = 'none';
-    document.body.style.position = 'unset';
+    document.body.style.overflow = 'unset';
   });
   formDiv.addEventListener('click', (e) => {
     if (e.path[0].id === 'form-main') {
       formDiv.style.display = 'none';
-      document.body.style.position = 'unset';
+      document.body.style.overflow = 'unset';
     };
   });
 }
