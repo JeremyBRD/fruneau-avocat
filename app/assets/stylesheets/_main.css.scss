@@ -24,6 +24,8 @@ a {
 
 body {
   background: #F9F9F9;
+  position: unset;
+  min-width: -webkit-fill-available;
 }
 
 .home-container {

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   
+  cursor: pointer;
   font-weight: 400;
   background-color: rgb(4, 118, 143);
   padding: 18px 20px;
@@ -16,5 +17,9 @@
 
   & i {
     margin-left: 10px;
+  }
+
+  &:hover {
+    background-color: rgb(25, 167, 199);
   }
 }

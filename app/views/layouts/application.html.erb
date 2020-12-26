@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <%# render 'contacts/contact-form', contact: @contact = Contact.new %>
+    <%= render 'contacts/contact-form', contact: @contact = Contact.new %>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%# react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
