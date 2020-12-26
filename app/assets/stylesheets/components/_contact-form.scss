@@ -86,7 +86,7 @@ input:focus, textarea:focus {
 	background-color: white;
 }
 
-#button-blue{
+.button-blue{
 	font-family: 'Jost', sans-serif;
 	float: left;
 	width: 100%;
@@ -104,7 +104,7 @@ input:focus, textarea:focus {
   border-radius: 5px;
 }
 
-#button-blue:hover{
+.button-blue:hover{
 	background-color: rgb(25, 167, 199);
 	color: #FFFFFF;
   border: 1px solid rgb(25, 167, 199);

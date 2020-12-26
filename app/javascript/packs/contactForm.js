@@ -1,12 +1,14 @@
-const callToAction = document.getElementById('call-contact-form');
-const sendingBtn = document.getElementById('button-blue');
+const callToAction = document.querySelectorAll('.call-contact-form');
+const sendingBtn = document.getElementById('sending-btn');
 const formDiv = document.getElementById('form-main');
 
 const openContactForm = () => {
-  callToAction.addEventListener('click', () => {
-    formDiv.style.display = 'flex';
-    document.body.style.position = 'fixed';
-  });
+  callToAction.forEach(btn => {
+    btn.addEventListener('click', () => {
+      formDiv.style.display = 'flex';
+      document.body.style.position = 'fixed';
+    });
+  })
 }
 
 const closeContactForm = () => {

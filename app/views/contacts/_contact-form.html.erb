@@ -8,7 +8,7 @@
         <%= f.input :name, label: false, placeholder: 'Votre nom', input_html: { class: 'feedback-input' } %>
         <%= f.input :email, label: false, placeholder: 'Votre e-mail', input_html: { class: 'feedback-input' } %>
         <%= f.input :body, label: false, placeholder: 'Votre message', as: :text, :input_html => { :cols => 6, :rows => 300 }, input_html: { class: 'feedback-input' } %>
-        <%= f.submit 'ENVOYER', id: 'button-blue' %>
+        <%= f.submit 'ENVOYER', class: 'button-blue', id: 'sending-btn' %>
       <% end %>
 
     </div>
