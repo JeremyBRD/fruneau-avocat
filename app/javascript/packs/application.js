@@ -13,7 +13,7 @@ require("channels")
 //= require 'greensock/easing/EasePack'
 
 // Internal imports :
-import { openContactForm, closeContactForm } from './contactForm';
+import { openContactForm, closeContactForm } from '../components/contactForm';
 
 document.addEventListener('turbolinks:load', () => {
   openContactForm();
