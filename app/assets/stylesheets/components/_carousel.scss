@@ -1,0 +1,30 @@
+.carousel-and-nav-container {
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+
+  background: #FFFFFF;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+}
+
+.carousel-element {
+  display: flex;
+}
+
+.carousel-presta-info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 500px;
+  padding: 25px;
+}
+
