@@ -1,20 +1,17 @@
 import React, { Component } from "react"
-import Turbolinks from "turbolinks";
-import PropTypes from "prop-types"
 
+// Import es6 functions && SCSS
 import { openContactForm, closeContactForm } from './contactForm'
 import '../../assets/stylesheets/components/_carousel.scss'
 
+// Import Images
 import SpritesPrestations from "../../assets/images/SpritesPrestations.png"
 import Path from "../../assets/images/path.svg"
 import CarouselArow from "../../assets/images/carousel-arow.svg"
 
-Turbolinks.start();
-
 class Carousel extends Component {
 
   render () {
-    
     openContactForm();
     closeContactForm();
 
