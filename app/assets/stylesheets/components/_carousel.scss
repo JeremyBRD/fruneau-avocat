@@ -25,5 +25,53 @@
   justify-content: space-between;
 
   width: 500px;
-  padding: 25px;
+  padding: 35px 20px 45px 40px;
+
+  & h3 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  & ul {
+    margin-left: 10px;
+  }
+
+  & li {
+    list-style: none;
+    font-family: "Jost", "sans-serif";
+    line-height: 2;
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: rgb(51, 49, 54);
+    letter-spacing: 2px;
+    width: 225px;
+
+    & img {
+      width: 30px;
+    }
+  }
+}
+
+.nav-carousel-btn {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 1px;
+  right: 371px;
+}
+
+.nav-btn {
+  color: white;
+  background-color: black;
+  padding: 25px 32.5px;
+  cursor: pointer;
+}
+
+#previous {
+  transform: rotate(180deg);
 }

@@ -12,8 +12,8 @@ import CarouselArow from "../../assets/images/carousel-arow.svg"
 class Carousel extends Component {
 
   render () {
-    openContactForm();
-    closeContactForm();
+    // openContactForm();
+    // closeContactForm();
 
     return (
       <React.Fragment>
@@ -95,8 +95,8 @@ class Carousel extends Component {
           </div>
 
           <div className="nav-carousel-btn">
-            <img src={ Path } alt="Boutton précédent" id="previous"/>
-            <img src={ Path } alt="Boutton suivant" id="next"/>
+            <img src={ Path } alt="Boutton précédent" id="previous" className="nav-btn"/>
+            <img src={ Path } alt="Boutton suivant" id="next" className="nav-btn"/>
           </div>
 
         </div>
