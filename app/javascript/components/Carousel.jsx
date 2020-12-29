@@ -12,8 +12,6 @@ import CarouselArow from "../../assets/images/carousel-arow.svg"
 class Carousel extends Component {
 
   render () {
-    // openContactForm();
-    // closeContactForm();
 
     return (
       <React.Fragment>

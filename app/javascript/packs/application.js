@@ -15,15 +15,16 @@ require("channels")
 // Internal imports :
 import { openContactForm, closeContactForm } from '../components/contactForm';
 
-document.addEventListener('turbolinks:load', () => {
-  openContactForm();
-  closeContactForm();
-});
-
 // Support component names relative to this directory:
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
+
+// Init functions in Turbolinks
+document.addEventListener('turbolinks:load', () => {
+  openContactForm();
+  closeContactForm();
+});
 
 require("trix")
 require("@rails/actiontext")

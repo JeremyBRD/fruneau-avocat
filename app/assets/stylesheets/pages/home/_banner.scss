@@ -53,6 +53,8 @@
       font-size: 28px;
       color: rgb(25, 167, 199);
 
+      transition: color .2s;
+
       &:hover {
         color: rgb(4, 118, 143);
       }

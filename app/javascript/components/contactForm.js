@@ -19,7 +19,7 @@ const closeContactForm = () => {
     document.body.style.overflow = 'unset';
   });
   formDiv.addEventListener('click', (e) => {
-    if (e.path[0].id === 'form-main') {
+    if (e.target.id === 'form-main') {
       formDiv.style.display = 'none';
       document.body.style.overflow = 'unset';
     };
