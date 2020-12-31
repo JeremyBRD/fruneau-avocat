@@ -141,3 +141,10 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
+
+.recaptcha-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px;
+}

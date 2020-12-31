@@ -9,6 +9,10 @@ class ContactsController < ApplicationController
     if verify_recaptcha(model: @contact) && @contact.valid?
       ContactMailer.contact(@contact).deliver_now
       redirect_to '/'
+      respond_to do |format|
+        format.html
+        format.js { render :js => "messageSent();" }
+      end
     else
       flash[:notice] = "Une erreur c'est produite, veuillez réessayer."
     end

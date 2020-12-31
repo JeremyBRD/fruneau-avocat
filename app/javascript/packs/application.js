@@ -13,7 +13,7 @@ require("channels")
 //= require 'greensock/easing/EasePack'
 
 // Internal imports :
-import { openContactForm, closeContactForm } from '../components/contactForm';
+import { openContactForm, closeContactForm, messageSent } from '../components/contactForm';
 
 // Support component names relative to this directory:
 var componentRequireContext = require.context("components", true);
@@ -24,6 +24,7 @@ ReactRailsUJS.useContext(componentRequireContext);
 document.addEventListener('turbolinks:load', () => {
   openContactForm();
   closeContactForm();
+  messageSent();
 });
 
 require("trix")

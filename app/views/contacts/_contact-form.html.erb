@@ -8,10 +8,8 @@
         <%= f.input :name, label: false, placeholder: 'Votre nom', input_html: { class: 'feedback-input' } %>
         <%= f.input :email, label: false, placeholder: 'Votre e-mail', input_html: { class: 'feedback-input' } %>
         <%= f.input :body, label: false, placeholder: 'Votre message', as: :text, :input_html => { :cols => 6, :rows => 300, class: 'feedback-input' } %>
-        <div class="g-recaptcha"
-          data-sitekey="6LeNDxsaAAAAAJJU8xEJPZiVBaSAwjVC_EfcyO39"
-          data-callback="onSubmit"
-          data-size="invisible">
+        <div class="recaptcha-tags">
+          <%= recaptcha_tags %>
         </div>
         <%= f.submit 'ENVOYER', class: 'button-blue', id: 'sending-btn' %>
       <% end %>
