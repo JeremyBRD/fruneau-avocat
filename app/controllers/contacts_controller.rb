@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @contact.valid?
+    if verify_recaptcha(model: @contact) && @contact.valid?
       ContactMailer.contact(@contact).deliver_now
       redirect_to '/'
     else

@@ -38,6 +38,8 @@ gem 'devise'
 
 gem 'postmark-rails'
 
+gem "recaptcha"
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
