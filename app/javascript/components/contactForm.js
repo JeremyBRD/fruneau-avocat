@@ -11,13 +11,7 @@ const openContactForm = () => {
 }
 
 const closeContactForm = () => {
-  // const sendingBtn = document.getElementById('sending-btn');
   const formDiv = document.getElementById('form-main');
-
-  // sendingBtn.addEventListener('click', () => {
-  //   formDiv.style.display = 'none';
-  //   document.body.style.overflow = 'unset';
-  // });
   formDiv.addEventListener('click', (e) => {
     if (e.target.id === 'form-main') {
       formDiv.style.display = 'none';
@@ -28,10 +22,8 @@ const closeContactForm = () => {
 
 const messageSent = () => {
   const formDiv = document.getElementById('form-main');
-
   formDiv.style.display = 'none';
   document.body.style.overflow = 'unset';
-
 }
 
 export { openContactForm, closeContactForm, messageSent };
