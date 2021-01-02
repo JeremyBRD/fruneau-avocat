@@ -1,0 +1,43 @@
+.tags-main-container {
+  margin: 0px auto auto 12vw;
+}
+
+.tags-container {
+  display: grid;
+  grid-template-columns: repeat(2, 16vw);
+  grid-template-rows: repeat(2, 90px);
+  grid-gap: 0px 60px;
+}
+
+.tag-container {
+  width: 16vw;
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+
+  h3 {
+    min-width: 16vw;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+    transition: all 3s;
+  }
+}
+
+#tag-1 {
+  margin-top: 10px;
+}
+
+#tag-3 {
+  margin-top: 10px;
+}
+
+#tag-2 {
+  margin-bottom: 10px;
+}
+
+#tag-4 {
+  margin-bottom: 10px;
+}
