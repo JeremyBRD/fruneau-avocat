@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 65% 35%;
+  position: relative;
 
   & * {
     margin: auto
@@ -20,6 +21,7 @@
 .site-title {
   margin-top: 125px;
   margin-bottom: 0px;
+  z-index: 10;
 
   * {
   font-weight: 500;
@@ -28,6 +30,10 @@
   & h2 {
     margin-top : 10px;
     font-size: 28px;
+  }
+
+  & h1 {
+    z-index: 10;
   }
 }
 

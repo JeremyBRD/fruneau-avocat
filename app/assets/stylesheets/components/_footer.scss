@@ -3,6 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
 
+  position: relative;
+
   min-height: 340px;
   background: #1D1C1E;
   color: white;
@@ -62,6 +64,8 @@
   border-left: 1px solid white;
   border-right: 1px solid;
   border-image: linear-gradient(to top, transparent, white, transparent) 1;
+
+  z-index: 10;
 
   & h3 {
     font-weight: 400;

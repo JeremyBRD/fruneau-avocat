@@ -33,8 +33,8 @@ const Tags = () => {
           <h3>DROIT PUBLIC</h3>
         </div>
         <div className="tag-container" id="tag-3">
-          <h3 style={{marginLeft: `${tagWidth}%`}}>DROIT DES CONTRATS</h3>
-          <h3>VISA</h3>
+          <h3 style={{marginLeft: `${tagWidth}%`}}>VISA</h3>
+          <h3>DROIT DES CONTRATS</h3>
         </div>
         <div className="tag-container" id="tag-4">
           <h3 style={{marginLeft: `${tagWidth}%`}}>RÉFÉRÉ LIBERTÉ</h3>
