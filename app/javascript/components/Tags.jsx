@@ -17,7 +17,7 @@ const Tags = () => {
         setTagsWidth(tagWidth => tagWidth + 100 );
         counter = 0
       }
-    }, 8000);
+    }, 5500);
     return () => clearInterval(interval);
   }, []);
 
