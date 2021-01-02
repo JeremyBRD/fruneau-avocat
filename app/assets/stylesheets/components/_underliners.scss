@@ -1,3 +1,5 @@
+// HOME PAGE
+
 #underliner-avocate-home {
   position: absolute;
   top: 173px;
@@ -31,6 +33,8 @@
   background: #19a7c7;
 }
 
+// FOOTER
+
 #underliner-footer {
   position: absolute;
   top: 63px;
@@ -38,6 +42,68 @@
 
   width: 200px;
   height: 3px;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}
+
+// CABINET
+
+#underliner-valeurs-cabinet {
+  position: absolute;
+  top: 72px;
+  left: 252px;
+
+  width: 140px;
+  height: 7px;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}
+
+#underliner-honoraires-cabinet {
+  position: absolute;
+  top: 72px;
+  left: 254px;
+
+  width: 217px;
+  height: 7px;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}
+
+//  DOMAINES EXPERTISE
+
+#underliner-domaines-expertise {
+  position: absolute;
+  top: 92px;
+  left: 397px;
+
+  width: 176px;
+  height: 7px;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}
+
+//  CONTACT
+
+#underliner-contact {
+  position: absolute;
+  top: 42px;
+
+  width: 142px;
+  height: 7px;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}
+
+// MENTION LÉGALES
+
+#underliner-legales {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  
+  width: 132px;
+  height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
 }
