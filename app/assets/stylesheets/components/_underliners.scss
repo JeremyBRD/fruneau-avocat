@@ -107,3 +107,17 @@
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
 }
+
+// CONTACT FORM
+
+#underliner-contact-form {
+  position: absolute;
+  top: 40px;
+  left: 79px;
+
+  width: 178px;
+  height: 7px;
+  z-index: -1;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  background: #19a7c7;
+}

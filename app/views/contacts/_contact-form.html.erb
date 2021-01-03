@@ -2,8 +2,8 @@
   <div id="form-div">
     <div class="form" id="form1">
 
-      <h2>Contactez-nous :</h2>
-      
+      <h2 class="zi500">Contactez-nous :</h2>
+      <div id="underliner-contact-form"></div>
       <%= simple_form_for contact do |f| %>
         <%= f.input :name, label: false, placeholder: 'Votre nom*', input_html: { class: 'feedback-input' } %>
         <%= f.input :email, label: false, placeholder: 'Votre e-mail*', input_html: { class: 'feedback-input' } %>
