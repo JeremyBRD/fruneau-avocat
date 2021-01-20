@@ -48,7 +48,10 @@
 
 .presentation-langages-list {
   display: flex;
-  width: 80%;
   justify-content: space-between;
   font-weight: bold;
+
+  *:not(last-child) {
+    margin-right: 15px;
+  }
 }

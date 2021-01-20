@@ -10,6 +10,7 @@
 
 .home-navbar-nav-links {
   width: 45vw;
+  // should be 60 to add actualite juridique
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
