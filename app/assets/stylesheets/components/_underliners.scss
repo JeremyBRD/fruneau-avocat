@@ -2,48 +2,53 @@
 
 #underliner-avocate-home {
   position: absolute;
-  top: 173px;
-  left: 165px;
+  top: 48px;
+  left: -7px;
 
   width: 177px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+  z-index: -1;
 }
 
 #underliner-paris-home {
   position: absolute;
-  top: 232px;
-  left: 315px;
+  top: 28px;
+  left: 142px;
 
   width: 63px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+  z-index: -1;
 }
 
 #underliner-prestations-home {
   position: absolute;
   top: 40px;
-  left: 655px;
+  left: 64px;
 
   width: 200px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+  z-index: -1;
 }
 
 // FOOTER
 
 #underliner-footer {
   position: absolute;
-  top: 63px;
-  left: 605px;
+  top: 20px;
+  left: -5px;
 
   width: 200px;
   height: 3px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+
+  z-index: -1;
 }
 
 // CABINET
@@ -51,23 +56,27 @@
 #underliner-valeurs-cabinet {
   position: absolute;
   top: 72px;
-  left: 252px;
+  left: 64px;
 
   width: 140px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+
+  z-index: -1;
 }
 
 #underliner-honoraires-cabinet {
   position: absolute;
   top: 72px;
-  left: 254px;
+  left: 66px;
 
   width: 217px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+
+  z-index: -1;
 }
 
 //  DOMAINES EXPERTISE
@@ -75,12 +84,14 @@
 #underliner-domaines-expertise {
   position: absolute;
   top: 92px;
-  left: 397px;
+  left: 228px;
 
   width: 176px;
   height: 7px;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   background: #19a7c7;
+
+  z-index: -1;
 }
 
 //  CONTACT

@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  position: relative;
   
   margin-top: 50px;
 
@@ -12,7 +11,16 @@
     margin-bottom: 50px;
   }
 
+  .prestation-underline {
+    position: relative;
+  }
+
   & .carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     margin-bottom: 80px;
     z-index: 10;
 

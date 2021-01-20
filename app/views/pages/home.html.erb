@@ -2,11 +2,15 @@
 
 <div class="banner">
   <div class="site-title">
-    <h1>Avocate à la Cour</h1>
-    <h2>Barreau de Paris</h2>
+    <div class="avocate-underline">
+      <h1>Avocate à la Cour</h1>
+      <div id="underliner-avocate-home"></div>
+    </div>
+    <div class="paris-underline">
+      <h2>Barreau de Paris</h2>
+      <div id="underliner-paris-home"></div>
+    </div>
   </div>
-  <div id="underliner-avocate-home"></div>
-  <div id="underliner-paris-home"></div>
 
   <div class="hero-section">
     <%= image_tag 'yuma-avatar.png', alt: 'photo de Yuma Funeau' %>
@@ -60,11 +64,12 @@
 <div class="prestation-section">
 
   <div class="carousel">
-    <h2>Les Prestations</h2>
+    <div class="prestation-underline">
+      <h2>Les Prestations</h2>
+      <div id="underliner-prestations-home"></div>
+    </div>
 
     <%= react_component("Carousel") %>
   </div>
-
-  <div id="underliner-prestations-home"></div>
 
 </div>

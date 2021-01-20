@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 65% 35%;
-  position: relative;
 
   & * {
     margin: auto
@@ -34,6 +33,14 @@
 
   & h1 {
     z-index: 10;
+  }
+
+  .avocate-underline {
+    position: relative;
+  }
+
+  .paris-underline {
+    position: relative;
   }
 }
 
