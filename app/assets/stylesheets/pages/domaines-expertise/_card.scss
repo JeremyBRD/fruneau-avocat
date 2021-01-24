@@ -56,3 +56,21 @@
     font-family: "Jost", "sans-serif";
   }
 }
+
+@media (max-width: 1200px) {
+  .domain-info {
+    width: 550px;
+  }
+
+  .domain-card-right{
+    .domain-info {
+      margin-left: 10px;
+    }
+  }
+
+  .domain-card-left{
+    .domain-info {
+      margin-right: 10px;
+    }
+  }
+}

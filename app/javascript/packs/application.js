@@ -14,6 +14,7 @@ require("channels")
 
 // Internal imports :
 import { openContactForm, closeContactForm, messageSent } from '../components/contactForm';
+import { hamburger } from '../components/hamburger'
 
 // Support component names relative to this directory:
 var componentRequireContext = require.context("components", true);
@@ -25,6 +26,7 @@ document.addEventListener('turbolinks:load', () => {
   openContactForm();
   closeContactForm();
   messageSent();
+  hamburger();
 });
 
 require("trix")

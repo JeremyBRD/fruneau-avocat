@@ -113,3 +113,12 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 1200px) {
+
+  // HONORAIRES
+  
+  .honoraires-info {
+    flex-direction: column-reverse;
+  }
+}

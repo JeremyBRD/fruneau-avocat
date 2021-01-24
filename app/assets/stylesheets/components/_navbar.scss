@@ -16,6 +16,10 @@
   grid-template-rows: 1fr;
 }
 
+// .container-corner {
+//   display: none;
+// }
+
 .nav-link-home {
   margin: auto;
   color: $white;
@@ -150,4 +154,14 @@
 .avatar-dropdown {
   width: 80px;
   border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .navbar-brand {
+    margin: 0 0 0 40px;
+  }
+
+  .home-navbar-nav-links {
+    display: none;
+  }
 }

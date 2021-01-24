@@ -29,3 +29,13 @@
     margin-left: 10px;
   }
 }
+
+@media (max-width: 1200px) {
+  .contact-container{
+    justify-content: space-around;
+
+    iframe {
+      margin: 100px 0;
+    }
+  }
+}
