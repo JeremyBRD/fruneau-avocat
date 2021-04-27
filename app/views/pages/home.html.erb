@@ -1,7 +1,7 @@
 <%# ---------------BANNER---------------  %>
 
 <div class="banner">
-  <div class="site-title">
+  <div class="site-title mc900">
     <div class="avocate-underline">
       <h1>Avocate à la Cour</h1>
       <div id="underliner-avocate-home"></div>
@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="hero-section">
+  <div class="hero-section mc900">
     <%= image_tag 'yuma-avatar.png', alt: 'photo de Yuma Funeau' %>
     <div class="social-links">
       <%# link_to '#' do %>
@@ -23,6 +23,32 @@
       <% end %>
     </div>
   </div>
+
+  <div class="title-pic">
+    <div class="site-title">
+      <div class="avocate-underline">
+        <h1>Avocate à la Cour</h1>
+        <div id="underliner-avocate-home"></div>
+      </div>
+      <div class="paris-underline">
+        <h2>Barreau de Paris</h2>
+        <div id="underliner-paris-home"></div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <%= image_tag 'yuma-avatar.png', alt: 'photo de Yuma Funeau' %>
+      <div class="social-links">
+        <%# link_to '#' do %>
+          <%#i class="fab fa-facebook-square"></%i>
+        <%# end %>
+        <%= link_to 'https://www.linkedin.com/in/yuma-fruneau-b44b698b/', target: '_blank' do %>
+          <i class="fab fa-linkedin"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  
   <%= render "components/call-to-action" %>
 
   <div class="tags-main-container">

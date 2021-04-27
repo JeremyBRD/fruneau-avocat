@@ -15,6 +15,10 @@
   }
 }
 
+.title-pic {
+  display: none;
+}
+
 // BANNER
 
 .site-title {
@@ -72,5 +76,25 @@
         color: rgb(4, 118, 143);
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+  }
+
+  .mc900 {
+    display: none
+  }
+
+  .title-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }

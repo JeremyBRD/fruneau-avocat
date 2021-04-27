@@ -165,3 +165,9 @@
     display: none;
   }
 }
+
+@media (max-width: 900px) {
+  .navbar-brand {
+    margin: 0 0 0 10px;
+  }
+}
