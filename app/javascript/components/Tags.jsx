@@ -26,7 +26,7 @@ const Tags = () => {
       <div className="tags-container">
         <div className="tag-container" id="tag-1">
           <h3 style={{marginLeft: `${tagWidth}%`}}>TITRE DE SÉJOUR</h3>
-          <h3>DIVOCRE</h3>
+          <h3>DIVORCE</h3>
         </div>
         <div className="tag-container" id="tag-2">
           <h3 style={{marginLeft: `${tagWidth}%`}}>REGROUPEMENT FAMILIAL</h3>
