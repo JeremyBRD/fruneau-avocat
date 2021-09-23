@@ -61,3 +61,27 @@
     margin-right: 15px;
   }
 }
+
+@media (max-width: 900px) {
+  .presentation {
+    margin: 0 10px;
+    background-image: url('balance-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+      display: none;
+    }
+
+    h2 {
+      margin-top: unset;
+      margin-left: unset;
+      margin: 0 auto 0 auto;
+    }
+
+    .presentation-info {
+      padding: 0 30px 0 30px;
+    }
+  }
+  
+}

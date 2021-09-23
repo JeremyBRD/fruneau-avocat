@@ -42,6 +42,21 @@ body {
               left -60px
               asset-data-url('elips_bg_left.png');
   background-size: 68%, 50%, 50%;
+  @media (max-width: 900px) {
+    background: no-repeat
+                top -8px
+                left -180px
+                asset-data-url('paris_home_bg.png'),
+                no-repeat
+                top 600px
+                right -90px
+                asset-data-url('elips_bg_right.png'),
+                no-repeat
+                top 900px
+                left -60px
+                asset-data-url('elips_bg_left.png');
+    background-size: 100%, 95%, 95%;
+  }
 }
 
 .pages-container {

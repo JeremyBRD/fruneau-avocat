@@ -35,8 +35,28 @@
 }
 
 
-@media (max-width: 1200px) {
+// @media (max-width: 1200px) {
+//   .tags-main-container {
+//     margin: 0 auto auto 10%;
+//   }
+// }
+
+@media (max-width: 900px) {
+
   .tags-main-container {
-    margin: 0 auto auto 10%;
+    margin: 0 auto auto 0;
+
+    .tags-container {
+      grid-template-columns: repeat(2, 45vw);
+      grid-gap: 0 10vw;
+
+      .tag-container {
+        width: 45vw;
+
+        h3 {
+          min-width: 45vw;
+        }
+      }
+    }
   }
 }

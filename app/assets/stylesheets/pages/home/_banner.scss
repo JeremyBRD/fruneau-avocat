@@ -83,11 +83,30 @@
 }
 
 @media (max-width: 900px) {
+
   .banner {
     display: flex;
     flex-direction: column;
     grid-template-columns: unset;
     grid-template-rows: unset;
+
+    .hero-section {
+      margin : 41px 0 0 0;
+    }
+
+    .site-title {
+      margin: unset;
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .call-to-action {
+      margin: auto;
+      padding: 18px 28px;
+    }
   }
 
   .mc900 {
@@ -97,7 +116,37 @@
   .title-pic {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 2vh 0;
+
+    #underliner-avocate-home {
+      top : unset;
+      bottom: 4px;
+      left: -4px;
+      width: 83px;
+      height: 7px;
+    }
+    #underliner-paris-home{
+      top: 18px;
+      left: 99px;
+      width: 49px;
+    }
+
+    & img {
+      width: 45vw;
+      height: 45vw;
+    }
+
+    & .hero-section .social-links {
+      width: unset;
+    }
+  }
+
+  .call-to-action {
+    margin-top: 30px;
+    .call-contact-form {
+      width: fit-content;
+    }
   }
 }

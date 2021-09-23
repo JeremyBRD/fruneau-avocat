@@ -89,3 +89,9 @@
 #previous {
   transform: rotate(180deg);
 }
+
+@media (max-width: 900px) {
+  .carousel-and-nav-container{
+    display: none;
+  }
+}
