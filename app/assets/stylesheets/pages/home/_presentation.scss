@@ -65,7 +65,7 @@
 @media (max-width: 900px) {
   .presentation {
     margin: 0 10px;
-    background-image: url('balance_background');
+    background-image: url(asset_path('balance_background'));
     background-size: cover;
     background-repeat: no-repeat;
 
