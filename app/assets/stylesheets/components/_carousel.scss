@@ -91,7 +91,17 @@
 }
 
 @media (max-width: 900px) {
-  .carousel-and-nav-container{
-    display: none;
+  .carousel-container{
+    width: 90vw;
+    height: 72vh;
+
+    .carousel-element{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  .nav-carousel-btn {
+    bottom: 342px;
+    right: 0px;
   }
 }
