@@ -7,6 +7,19 @@
 .footer-mobile{
   background-color: Black;
   color: white;
+  min-height: 100px;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+
+  i {
+    font-size: 20px;
+  }
+
+  p {
+    justify-content: center;
+  }
+
   a {
     color: white;
 
@@ -20,11 +33,17 @@
     display: flex;
   }
 
-  justify-content: center;
+  hr:nth-child(1) {
+    margin-bottom: 15px;
+  }
+  hr:nth-child(2n) {
+    margin: 15px 0;
+  }
 }
 
 .social-media-mobile-footer {
   justify-content: space-around;
+  margin: 0 0 15px 0;
 }
 
 .footer-mobile-rights {
