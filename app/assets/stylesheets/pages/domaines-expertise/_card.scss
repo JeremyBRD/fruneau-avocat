@@ -74,3 +74,33 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .domains-container {
+    .underline-expertise{
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      #underliner-domaines-expertise{
+        top: 62px;
+        left: 52px;
+        width: 195px;
+      }
+    }
+    .domain-card-right{
+      flex-direction: column-reverse;
+    }
+
+    .domain-card-left{
+      flex-direction: column-reverse;
+    }
+
+    .domain-info {
+      width: 300px;
+      height: auto;
+      margin: 0;
+      padding: 15px;
+    }  
+  }
+}
