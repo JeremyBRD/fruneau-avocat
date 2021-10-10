@@ -1,5 +1,5 @@
 .photo-yuma {
-  width: 450px;
+  width: auto;
   height: 350px;
   border-radius: 10px;
   margin: 10px 50px 10px 0;
@@ -79,7 +79,6 @@
 
 .honoraires-info {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 
@@ -120,5 +119,56 @@
   
   .honoraires-info {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .cabinet-container {
+    padding: 0 5vw;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    #underliner-valeurs-cabinet {
+      left: 105px;
+    }
+
+    .valeurs {
+
+      .photo-yuma {
+        width: auto;
+        margin: 0 0 50px 0;
+      }
+    
+      .valeurs-info {
+        flex-direction: column;
+      }
+    }
+    .honoraires{
+
+      .underline-honoraire{
+
+          #honoraires-section {
+            margin: 60px 0 10px 0;
+          }
+
+          #underliner-honoraires-cabinet{
+            top: 102px;
+            left: 86px;
+          }
+        }
+
+        img {
+          margin: 0;
+          width: 85vw;
+        }
+
+        .honoraires-info-text:nth-child(1) {
+          margin-top: 35px;
+        }
+      }
   }
 }
