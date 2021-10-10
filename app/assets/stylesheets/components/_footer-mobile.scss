@@ -3,3 +3,34 @@
     display: none;
   }
 }
+
+.footer-mobile{
+  background-color: Black;
+  color: white;
+  a {
+    color: white;
+
+    &:hover {
+      color: rgb(25, 167, 199);
+      text-decoration: none;
+    }
+  }
+
+  * {
+    display: flex;
+  }
+
+  justify-content: center;
+}
+
+.social-media-mobile-footer {
+  justify-content: space-around;
+}
+
+.footer-mobile-rights {
+  justify-content: center;
+
+  #yuma-footer-mobile {
+    margin: 0 5px;
+  }
+}
