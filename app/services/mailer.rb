@@ -28,9 +28,9 @@ class Mailer < ApplicationService
 
   def body
     {
-      from: contact.email,
+      from: 'Fruneau Avocat <hostmaster@fruneau-avocat.com>',
       to: ENV.fetch('MAILGUN_RECIPIENT_TEST', ContactInfo.current.email),
-      subject: "Nouveau message de #{contact.name} via fruneau-avocat.com",
+      subject: "Nouvelle demande de contact",
       text: contact.body,
       html: html_body
     }
