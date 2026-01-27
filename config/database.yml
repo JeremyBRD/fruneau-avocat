@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: fruneau_avocat_production
-  username: fruneau_avocat
-  password: <%= ENV['FRUNEAU_AVOCAT_DATABASE_PASSWORD'] %>
+  # Use DATABASE_URL from Heroku (or other platform)
+  url: <%= ENV['DATABASE_URL'] %>

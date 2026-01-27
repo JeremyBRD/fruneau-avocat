@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   private
 
   def contact_info
-    @contact_info = ContactInfo.current
+    @contact_info = ContactInfo.find_by(current_info: true)
   end
 end
