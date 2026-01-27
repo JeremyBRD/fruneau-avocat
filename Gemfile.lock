@@ -228,11 +228,6 @@ GEM
     pg (1.6.3-x86_64-darwin)
     pg (1.6.3-x86_64-linux)
     pg (1.6.3-x86_64-linux-musl)
-    postmark (1.25.1)
-      json
-    postmark-rails (0.22.1)
-      actionmailer (>= 3.0.0)
-      postmark (>= 1.21.3, < 2.0)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -416,7 +411,6 @@ DEPENDENCIES
   listen (~> 3.2)
   mutex_m
   pg (~> 1.5)
-  postmark-rails
   propshaft
   pry-byebug
   pry-rails

@@ -32,8 +32,6 @@ gem "mutex_m"
 
 gem "connection_pool", "< 3"
 
-gem 'postmark-rails'
-
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
