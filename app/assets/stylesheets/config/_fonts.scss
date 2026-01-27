@@ -1,6 +1,38 @@
-// Import Google fonts
+// Define fonts for body and headers
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// Define fonts for body and headers
 $body-font: "Jost", "sans-serif";
 $headers-font: "Jost", "sans-serif";
+
+// Override Font Awesome font path to use absolute path
+$fa-font-path: "/webfonts" !default;
+
+h1 {
+  font-family: "Jost", "sans-serif";
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Jost", "sans-serif";
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Jost", "sans-serif";
+  font-size: 20px;
+}
+
+p, a {
+  font-family: "Jost", "sans-serif";
+  font-size: 16px;
+}
+
+a {
+  color: rgb(4, 118, 143);
+}
+
+body {
+  background: #F9F9F9;
+  overflow: unset;
+  min-width: -webkit-fill-available;
+}

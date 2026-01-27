@@ -1,15 +1,21 @@
 <div class="footer-mobile">
   <hr>
+
   <div class="social-media-mobile-footer">
     <%= link_to @contact_info.linkedin_url, target: '_blank' do %>
       <i class="fab fa-linkedin"></i>
     <% end %>
+
     <%= link_to 'Mentions Légales', mentions_legales_path %>
   </div>
-  <p><%= @contact_info.email %></p>
+
+  <p><%= email_link %></p>
+
   <hr>
+
   <div class="footer-mobile-rights">
     <i class="far fa-copyright"></i>
+
     <%= copiright_year_update %>
     <p id="yuma-footer-mobile"><%= @contact_info.full_name.upcase %> by</p>
     <%= link_to 'Jérémy BRD', 'https://www.jeremybrd.dev' %>

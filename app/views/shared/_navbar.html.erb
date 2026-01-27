@@ -1,41 +1,39 @@
 <div class="home-navbar">
   <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag 'logo_bigger.png' %>
+
     <div class="brand-text">
       <span><%= @contact_info.first_name.upcase %></span>
       <span><%= @contact_info.last_name.upcase %></span>
     </div>
   <% end %>
+
   <div class="home-navbar-nav-links">
     <div class="dropdown-cabinet">
       <%= link_to cabinet_path, class: 'nav-link-home dropdown-cabinet-btn' do %>
         LE CABINET
       <% end %>
+
       <div class="linker"></div>
+
       <div class="dropdown-cabinet-content">
         <%= link_to 'LES VALEURS DU CABINET', cabinet_path %>
         <%= link_to 'LES HONORAIRES', '/cabinet#honoraires-section', id: 'lthonoraires' %>
       </div>
     </div>
+
     <%= link_to 'LES DOMAINES D\'EXPERTISE', domaines_expertise_path, class: 'nav-link-home' %>
-    <%# link_to 'LES ACTUALITÉS JURIDIQUES', '#', class: 'nav-link-home' %>
     <%= link_to 'CONTACT', contact_path, class: 'nav-link-home' %>
-    <% if user_signed_in? %>
-      <div class="nav-item dropdown">
-        <%= image_tag "yuma-avatar.png", class: "avatar-dropdown dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Deconexion", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-        </div>
-      </div>
-    <% end %>
   </div>
-  <div class="hamburger">
-    <div class="circle-menu">
+
+  <div class="hamburger" data-controller="hamburger">
+    <div class="circle-menu" data-hamburger-target="menu">
       <%= link_to 'LE CABINET', cabinet_path, class: 'links-circle', id: 'mb10vh' %>
       <%= link_to 'LES DOMAINES D\'EXPERTISE', domaines_expertise_path, class: 'links-circle', id: 'mb10vh' %>
       <%= link_to 'CONTACT', contact_path, class: 'links-circle' %>
     </div>
-    <div class="btn-circle">
+
+    <div class="btn-circle" data-hamburger-target="button" data-action="click->hamburger#toggle">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>

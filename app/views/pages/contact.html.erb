@@ -4,13 +4,13 @@
     <div id="underliner-contact"></div>
 
     <div class="contact-info-phone">
-      <p>Tel : <%= @contact_info.phone %></p>
+      <p>Tel : <%= phone_link %></p>
       <% unless @contact_info.fax.blank? %>
         <p>Fax : <%= @contact_info.fax %></p>
       <% end %>
     </div>
 
-    <p><%= @contact_info.email %></p>
+    <p><%= email_link %></p>
 
     <p>Réception sur RDV uniquement</p>
 
@@ -22,5 +22,11 @@
     <%= render 'components/call-to-action' %>
   </div>
 
-  <iframe src="<%= @contact_info.google_map_url %>" width="350" height="540" frameborder="0" style="border:1px solid #CCCCCC; border-radius: 5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <iframe src="<%= @contact_info.google_map_url %>"
+          width="350" height="540"
+          frameborder="0" style="border:1px solid #CCCCCC; border-radius: 5px;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0">
+  </iframe>
 </div>

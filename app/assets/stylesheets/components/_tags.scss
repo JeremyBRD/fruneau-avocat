@@ -22,7 +22,7 @@
     font-weight: 300;
     text-align: center;
 
-    transition: all 3s;
+    transition: margin-left 3s ease;
   }
 }
 
@@ -33,13 +33,6 @@
 #tag-2, #tag-4 {
   margin-bottom: 10px;
 }
-
-
-// @media (max-width: 1200px) {
-//   .tags-main-container {
-//     margin: 0 auto auto 10%;
-//   }
-// }
 
 @media (max-width: 900px) {
 
