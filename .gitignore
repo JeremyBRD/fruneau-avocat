@@ -38,6 +38,9 @@ yarn-debug.log*
 .yarn-integrity
 # Ignore .env file containing credentials.
 .env*
-# Ignore Mac and Linux file system files
+# Ignore editor settings
+.vscode/
+.idea/
 *.swp
+# Ignore Mac and Linux file system files
 .DS_Store
