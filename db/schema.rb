@@ -10,24 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_01_27_100456) do
+ActiveRecord::Schema[8.0].define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
-  create_table "contact_infos", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "phone"
-    t.string "fax"
-    t.string "street_number"
-    t.string "street_name"
-    t.string "zip_code"
-    t.string "city"
-    t.string "linkedin_url"
-    t.boolean "current_info", default: true
-    t.index ["current_info"], name: "index_contact_infos_on_current_info_true_unique", unique: true, where: "(current_info = true)"
-  end
+  # No tables needed - ContactInfo is now an ActiveModel (no database)
 end
