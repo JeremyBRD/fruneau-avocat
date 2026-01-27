@@ -58,6 +58,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Open a preview in the browser instead of sending
   gem 'letter_opener', '~> 1.7'
+  gem 'dotenv-rails'
 end
 
 group :test do
