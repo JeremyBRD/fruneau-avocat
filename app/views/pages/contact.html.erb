@@ -2,18 +2,25 @@
   <div class="contact-info">
     <h1 class="zi10">Contact</h1>
     <div id="underliner-contact"></div>
+
     <div class="contact-info-phone">
-      <p>Tel : 09 81 29 56 39</p>
-      <p>Fax : 09 56 65 38 16</p>
+      <p>Tel : <%= @contact_info.phone %></p>
+      <% unless @contact_info.fax.blank? %>
+        <p>Fax : <%= @contact_info.fax %></p>
+      <% end %>
     </div>
-    <p>avocat@fruneau-avocat.com</p>
+
+    <p><%= @contact_info.email %></p>
+
     <p>Réception sur RDV uniquement</p>
+
     <div class="contact-info-address">
-      <p>60, rue de Londres</p>
-      <p>75008 Paris</p>
+      <p><%= @contact_info.street_number %> <%= @contact_info.street_name %></p>
+      <p><%= @contact_info.zip_code %> <%= @contact_info.city %></p>
     </div>
-    <p>Métro Europe ou Saint-Lazare</p>
+
     <%= render 'components/call-to-action' %>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.917971346316!2d2.321954276449665!3d48.87884027133481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4ada608c19%3A0x2e1f8087ad57f962!2s60%20Rue%20de%20Londres%2C%2075008%20Paris!5e0!3m2!1sen!2sfr!4v1692804272631!5m2!1sen!2sfr" width="350" height="540" frameborder="0" style="border:1px solid #CCCCCC; border-radius: 5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+  <iframe src="<%= @contact_info.google_map_url %>" width="350" height="540" frameborder="0" style="border:1px solid #CCCCCC; border-radius: 5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>

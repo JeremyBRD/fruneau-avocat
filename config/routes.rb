@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :articles
   devise_for :users
+
   root to: 'pages#home'
+
   get 'domaines-expertise', to: 'pages#domaines_expertise'
   get 'cabinet', to: 'pages#cabinet'
   get 'contact', to: 'pages#contact'
@@ -9,4 +10,5 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
 
+  resources :articles
 end
