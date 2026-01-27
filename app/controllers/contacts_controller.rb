@@ -28,6 +28,6 @@ class ContactsController < ApplicationController
   end
 
   def send_mail!
-    ContactMailer.contact(@contact).deliver_now
+    Mailer.call(contact: @contact)
   end
 end
