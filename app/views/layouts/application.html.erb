@@ -3,7 +3,6 @@
   <head>
     <title><%= @contact_info.full_name %> | Avocate |</title>
     <%# Security : %>
-
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,27 +13,34 @@
     <meta name="description" content="Maître Fruneau intervient en droit des étrangers (recours OQTF, demande de titre de séjour, naturalisation, regroupement familial), en droit de la famille (divorce contentieux, consentement mutuel), en droit de la sécurité sociale (contentieux CPAM), en droit pénal (garde à vue, comparution immédiate, CRPC) et en droit public (droit pénitentiaire, contestation de décisions administratives).
 Le cabinet se situe 60 rue de Londres à Paris, et est ouvert du lundi au samedi sur rendez vous.
 Langues parlées : français, anglais, italien">
+
     <%# SCSS & JS Links : %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_importmap_tags %>
+
     <%# Google Recaptcha cdn %>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <% if Recaptcha.configuration.site_key.present? %>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <% end %>
   </head>
 
   <body>
     <%= render 'contacts/contact-form', contact: @contact = Contact.new %>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%# react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
-    <% if action_name === 'home' %>
-      <div class="home-container">
+
+    <% if action_name == 'home' %>
+      <% bg_style = "background: no-repeat top -50px left -90px url('#{asset_path('paris_home_bg.png')}'), no-repeat top 600px right -90px url('#{asset_path('elips_bg_right.png')}'), no-repeat top 900px left -60px url('#{asset_path('elips_bg_left.png')}'); background-size: 68%, 50%, 50%;" %>
+      <div class="home-container" style="<%= bg_style %>">
         <%= yield %>
       </div>
     <% else %>
-      <div class="pages-container">
+      <% bg_style = "background: no-repeat top 300px right -90px url('#{asset_path('elips_bg_right.png')}'), no-repeat top 800px left -60px url('#{asset_path('elips_bg_left.png')}'); background-size: 50%, 50%;" %>
+      <div class="pages-container" style="<%= bg_style %>">
         <%= yield %>
       </div>
     <% end %>
+
     <% unless action_name == 'new' %>
       <%= render 'shared/footer' %>
       <%= render 'shared/footer-mobile' %>

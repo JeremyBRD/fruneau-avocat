@@ -1,27 +1,33 @@
 class ContactsController < ApplicationController
-
   def new
     @contact = Contact.new
   end
 
   def create
     @contact = Contact.new(contact_params)
-    if verify_recaptcha(model: @contact) && @contact.valid?
-      ContactMailer.contact(@contact).deliver_now
-      redirect_to '/'
-      respond_to do |format|
-        format.html
-        format.js { render :js => "messageSent();" }
-      end
+
+    if recaptcha_valid? && @contact.valid?
+      send_mail!
+
+      flash[:notice] = "Votre message a été envoyé avec succès."
+      redirect_to root_path
     else
-      flash[:notice] = "Une erreur c'est produite, veuillez réessayer."
+      flash[:alert] = "Une erreur c'est produite, veuillez réessayer."
+      render :new, status: :unprocessable_entity
     end
   end
 
-private
+  private
 
   def contact_params
-      params.require(:contact).permit(:name, :email, :body)
+    params.require(:contact).permit(:name, :email, :body)
   end
 
+  def recaptcha_valid?
+    Recaptcha.configuration.site_key.present? ? verify_recaptcha(model: @contact) : true
+  end
+
+  def send_mail!
+    ContactMailer.contact(@contact).deliver_now
+  end
 end

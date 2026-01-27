@@ -1,34 +1,35 @@
 <div class="footer">
-
-<%# ---------------CONTACT SECTION (LEFT CONTENT)---------------  %>
-
+  <%# ---------------CONTACT SECTION (LEFT CONTENT)---------------  %>
   <div class="footer-contact-section">
     <div class="footer-brand">
       <%= image_tag 'logo_bigger.png' %>
       <h2><%= @contact_info.full_name.upcase %></h2>
     </div>
+
     <div class="footer-info-contact">
       <div class="footer-info-contact-address">
         <p><%= @contact_info.street_number %> <%= @contact_info.street_name %></p>
         <p><%= @contact_info.zip_code %> <%= @contact_info.city %></p>
       </div>
+
       <div class="footer-info-contact-tel">
-        <p>Tel : <%= @contact_info.phone %></p>
+        <p>Tel : <%= phone_link %></p>
         <% unless @contact_info.fax.blank? %>
           <p>Fax : <%= @contact_info.fax %></p>
         <% end %>
       </div>
-      <p><%= @contact_info.email %></p>
+
+      <p><%= email_link %></p>
     </div>
   </div>
 
-<%# ---------------SITE PLAN SECTION (MIDDLE CONTENT)---------------  %>
-
+  <%# ---------------SITE PLAN SECTION (MIDDLE CONTENT)---------------  %>
   <div class="footer-site-plan-section">
     <div class="footer-underline">
       <h3>PLAN DU SITE :</h3>
       <div id="underliner-footer"></div>
     </div>
+
     <div class="footer-site-plan-links">
       <%= link_to 'Le Cabinet', cabinet_path %>
       <%= link_to 'Les Domaines d\'Expertise', domaines_expertise_path %>
@@ -37,18 +38,16 @@
     </div>
   </div>
 
-<%# ---------------LEGAL SECTION (RIGHT CONTENT)---------------  %>
-
+  <%# ---------------LEGAL SECTION (RIGHT CONTENT)---------------  %>
   <div class="footer-legal-section">
     <div class="footer-social-links">
-      <%# link_to '#' do %>
-        <%# i class="fab fa-facebook-square"></%i>
-      <%# end %>
       <%= link_to @contact_info.linkedin_url, target: '_blank' do %>
         <i class="fab fa-linkedin"></i>
       <% end %>
     </div>
+
     <%= link_to 'Mentions Légales', mentions_legales_path %>
+
     <div class="footer-rights">
       <i class="far fa-copyright"></i>
       <%= copiright_year_update %>
@@ -56,5 +55,4 @@
       <%= link_to 'Jérémy BRD', 'https://www.jeremybrd.dev' %>
     </div>
   </div>
-
 </div>

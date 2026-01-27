@@ -1,8 +1,7 @@
 class ContactMailer < ApplicationMailer
-
   def contact(contact)
     @contact = contact
-    mail to: "avocat@fruneau-avocat.com", subject: "Nouveau Message de fruneau-avocat.com"
+
+    mail to: ContactInfo.current.email, subject: "Nouveau Message de fruneau-avocat.com"
   end
-  
 end

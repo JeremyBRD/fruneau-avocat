@@ -5,12 +5,8 @@
 @import "config/reset";
 
 // External libraries
-// @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "trix/dist/trix";
 
 // Your CSS partials
-@import "main";
 @import "components/index";
 @import "pages/index";
-@import "actiontext";

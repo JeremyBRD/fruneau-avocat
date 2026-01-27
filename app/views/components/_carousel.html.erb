@@ -1,0 +1,85 @@
+<div data-controller="carousel" class="carousel-and-nav-container">
+  <div class="carousel-container">
+    <div class="carousel-wrapper" data-carousel-target="wrapper">
+      <div class="carousel-element" data-carousel-target="element">
+        <div class="carousel-presta-info">
+          <h3>Droit des étrangers</h3>
+          <ul>
+            <li>Demande de titre de séjour auprès de la Préfecture</li>
+            <li>Obtention de Visa</li>
+            <li>Procédure de regroupement familial</li>
+            <li>Demande de naturalisation</li>
+            <li>Obligation de quitter le territoire</li>
+            <li>Interdiction de retour sur le territoire</li>
+          </ul>
+          <a class='call-contact-form'>
+            NOUS CONTACTER
+            <%= image_tag 'carousel-arow.svg', alt: 'Flèche vers la droite' %>
+          </a>
+        </div>
+        <%= image_tag 'SpritesPrestations.png', id: 'globe-carousel', alt: 'Globe terrester' %>
+      </div>
+
+    <div class="carousel-element" data-carousel-target="element">
+      <div class="carousel-presta-info">
+        <h3>Droit de la famille</h3>
+        <ul>
+          <li>Divorce contentieux</li>
+          <li>Divorce accepté</li>
+          <li>Divorce par consentement mutuel</li>
+        </ul>
+        <a class='call-contact-form'>
+          NOUS CONTACTER
+          <%= image_tag 'carousel-arow.svg', alt: 'Flèche vers la droite' %>
+        </a>
+      </div>
+      <%= image_tag 'SpritesPrestations.png', id: 'trombones-carousel', alt: 'Trombones' %>
+    </div>
+
+    <div class="carousel-element" data-carousel-target="element">
+      <div class="carousel-presta-info">
+        <h3>Droit administratif</h3>
+        <ul>
+          <li>Recours contre des décisions administratives</li>
+          <li>Recours administratif préalable obligatoire</li>
+          <li>Saisine de la Commission d'accès aux documents administratifs</li>
+          <li>Engagement de la responsabilité d'une personne publique</li>
+          <li>Référé liberté</li>
+          <li>Référé suspension</li>
+        </ul>
+        <a class='call-contact-form'>
+          NOUS CONTACTER
+          <%= image_tag 'carousel-arow.svg', alt: 'Flèche vers la droite' %>
+        </a>
+      </div>
+      <%= image_tag 'SpritesPrestations.png', id: 'conseil-etat-carousel', alt: 'Conseil d\'État' %>
+    </div>
+
+    <div class="carousel-element" data-carousel-target="element">
+      <div class="carousel-presta-info">
+        <h3>Droit des personnes</h3>
+        <ul>
+          <li>Responsabilité civile</li>
+          <li>Droit pénal</li>
+          <li>Propriété intellectuelle</li>
+          <li>Rédaction de contrat</li>
+        </ul>
+        <a class='call-contact-form'>
+          NOUS CONTACTER
+          <%= image_tag 'carousel-arow.svg', alt: 'Flèche vers la droite' %>
+        </a>
+      </div>
+      <%= image_tag 'SpritesPrestations.png', id: 'contract-carousel', alt: 'Contract' %>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav-carousel-btn">
+    <button type="button" class="nav-btn" id="previous" data-action="click->carousel#previous">
+      <%= image_tag 'path.svg', alt: 'Boutton précédent' %>
+    </button>
+    <button type="button" class="nav-btn" id="next" data-action="click->carousel#next">
+      <%= image_tag 'path.svg', alt: 'Boutton suivant' %>
+    </button>
+  </div>
+</div>

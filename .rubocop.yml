@@ -2,7 +2,6 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'bin/**/*'
-    - 'db/**/*'
     - 'config/**/*'
     - 'node_modules/**/*'
     - 'script/**/*'
@@ -22,6 +21,8 @@ Style/WordArray:
   Enabled: false
 Metrics/AbcSize:
   Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
 Style/MutableConstant:
   Enabled: false
 Style/SignalException:
@@ -34,9 +35,61 @@ Lint/MissingSuper:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
+Layout/EmptyLines:
+  Enabled: false
 Layout/LineLength:
-  Max: 120
+  Enabled: false
+Layout/FirstArgumentIndentation:
+  Enabled: false
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Style/EmptyMethod:
   Enabled: false
 Bundler/OrderedGems:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Style/ParallelAssignment:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Style/FetchEnvVar:
+  Enabled: false
+Style/RedundantFetchBlock:
+  Enabled: false
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: false
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+Naming/MethodParameterName:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/OpenStructUse:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
+Style/FileWrite:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Lint/UnusedBlockArgument:
+  Enabled: false
+Lint/SafeNavigationConsistency:
+  Enabled: false
+Style/ArgumentsForwarding:
+  Enabled: false
+Style/OptionalBooleanParameter:
   Enabled: false

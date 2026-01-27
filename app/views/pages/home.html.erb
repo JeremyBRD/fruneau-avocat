@@ -15,9 +15,6 @@
   <div class="hero-section mc900">
     <%= image_tag 'yuma_portrait_avatar.jpg', alt: 'photo de Yuma Funeau' %>
     <div class="social-links">
-      <%# link_to '#' do %>
-        <%#i class="fab fa-facebook-square"></%i>
-      <%# end %>
       <%= link_to @contact_info.linkedin_url, target: '_blank' do %>
         <i class="fab fa-linkedin"></i>
       <% end %>
@@ -39,9 +36,6 @@
     <div class="hero-section">
       <%= image_tag 'yuma_portrait_avatar.jpg', alt: 'photo de Yuma Funeau' %>
       <div class="social-links">
-        <%# link_to '#' do %>
-          <%#i class="fab fa-facebook-square"></%i>
-        <%# end %>
         <%= link_to @contact_info.linkedin_url, target: '_blank' do %>
           <i class="fab fa-linkedin"></i>
         <% end %>
@@ -52,14 +46,14 @@
   <%= render "components/call-to-action" %>
 
   <div class="tags-main-container">
-    <%= react_component("Tags") %>
+    <%= render "components/tags" %>
   </div>
 
 </div>
 
 <%# ---------------PRESENTATION---------------  %>
 <div class="prestation-container">
-  <div class="presentation">
+  <div class="presentation" data-controller="presentation" data-presentation-bg-url-value="<%= asset_path('balance_background.png') %>">
     <div class="presentation-info">
       <h2>Présentation :</h2>
       <p>
@@ -96,7 +90,7 @@
       <div id="underliner-prestations-home"></div>
     </div>
 
-    <%= react_component("Carousel") %>
+    <%= render "components/carousel" %>
   </div>
 
 </div>

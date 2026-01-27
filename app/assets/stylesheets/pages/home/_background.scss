@@ -1,0 +1,16 @@
+.home-container {
+  // Background images are set inline in the layout using asset_path
+  // This allows Propshaft to generate correct URLs with digests
+  @media (max-width: 900px) {
+    background-size: 100%, 95%, 95% !important;
+    background-position: top -8px left -180px, top 600px right -90px, top 900px left -60px !important;
+  }
+}
+
+.zi10 {
+  z-index: 10;
+}
+
+.zi500 {
+  z-index: 500;
+}

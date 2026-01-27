@@ -4,7 +4,6 @@
 
 .carousel-container {
   display: flex;
-
   background: #FFFFFF;
   width: 870px;
   height: 370px;
@@ -13,9 +12,14 @@
   border-radius: 10px;
 }
 
-.carousel-element {
+.carousel-wrapper {
   display: flex;
   transition: margin-left .5s;
+}
+
+.carousel-element {
+  display: flex;
+  min-width: 870px;
 }
 
 .carousel-presta-info {
@@ -80,9 +84,17 @@
   padding: 25px 32.5px;
   cursor: pointer;
   transition: background-color .2s;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: rgb(51, 49, 54);
+  }
+
+  img {
+    display: block;
   }
 }
 
@@ -99,7 +111,7 @@
       flex-direction: column-reverse;
     }
   }
-  
+
   .nav-carousel-btn {
     bottom: 342px;
     right: 0px;

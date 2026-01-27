@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-
   root to: 'pages#home'
 
   get 'domaines-expertise', to: 'pages#domaines_expertise'
@@ -9,6 +7,4 @@ Rails.application.routes.draw do
   get 'mentions-legales', to: 'pages#mentions_legales'
 
   resources :contacts, only: [:new, :create]
-
-  resources :articles
 end
