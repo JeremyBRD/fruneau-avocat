@@ -1,17 +1,17 @@
 <div class="footer-mobile">
   <hr>
   <div class="social-media-mobile-footer">
-    <%= link_to 'https://www.linkedin.com/in/yuma-fruneau-b44b698b/', target: '_blank' do %>
+    <%= link_to @contact_info.linkedin_url, target: '_blank' do %>
       <i class="fab fa-linkedin"></i>
     <% end %>
     <%= link_to 'Mentions Légales', mentions_legales_path %>
   </div>
-  <p>avocat@fruneau-avocat.com</p>
+  <p><%= @contact_info.email %></p>
   <hr>
   <div class="footer-mobile-rights">
     <i class="far fa-copyright"></i>
     <%= copiright_year_update %>
-    <p id="yuma-footer-mobile">YUMA FRUNEAU by</p>
+    <p id="yuma-footer-mobile"><%= @contact_info.full_name.upcase %> by</p>
     <%= link_to 'Jérémy BRD', 'https://www.jeremybrd.dev' %>
   </div>
 </div>
