@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "/up", to: proc { [200, { "Content-Type" => "text/plain" }, ["OK"]] }
+
   root to: 'pages#home'
 
   get 'domaines-expertise', to: 'pages#domaines_expertise'
